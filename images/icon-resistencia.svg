@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <!-- Icono de Resistencia - Shield con bloque -->
+  <defs>
+    <linearGradient id="gradResistencia" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#E67E22;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D35400;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Shield background -->
+  <path d="M50 10 C30 10, 15 20, 15 35 L15 50 C15 70, 30 85, 50 90 C70 85, 85 70, 85 50 L85 35 C85 20, 70 10, 50 10 Z" 
+        fill="url(#gradResistencia)" opacity="0.1"/>
+  
+  <!-- Shield outline -->
+  <path d="M50 15 C32 15, 20 23, 20 35 L20 48 C20 65, 33 78, 50 83 C67 78, 80 65, 80 48 L80 35 C80 23, 68 15, 50 15 Z" 
+        fill="url(#gradResistencia)"/>
+  
+  <!-- Bloque en el centro -->
+  <rect x="38" y="38" width="24" height="16" rx="1" fill="white" opacity="0.9"/>
+  
+  <!-- Líneas del bloque (cavidades) -->
+  <line x1="45" y1="40" x2="45" y2="52" stroke="#2C3E50" stroke-width="1.5" opacity="0.3"/>
+  <line x1="55" y1="40" x2="55" y2="52" stroke="#2C3E50" stroke-width="1.5" opacity="0.3"/>
+  
+  <!-- Check de resistencia -->
+  <path d="M42 60 L47 65 L58 54" 
+        stroke="white" 
+        stroke-width="3" 
+        stroke-linecap="round" 
+        stroke-linejoin="round" 
+        fill="none"/>
+</svg>

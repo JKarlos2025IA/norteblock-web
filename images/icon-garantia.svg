@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <!-- Icono de Garantía - Medalla con cinta -->
+  <defs>
+    <linearGradient id="gradGarantia" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#E67E22;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D35400;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Cinta izquierda -->
+  <path d="M35 10 L35 50 L45 45 L35 10" fill="url(#gradGarantia)" opacity="0.8"/>
+  
+  <!-- Cinta derecha -->
+  <path d="M65 10 L65 50 L55 45 L65 10" fill="url(#gradGarantia)" opacity="0.8"/>
+  
+  <!-- Círculo exterior de la medalla -->
+  <circle cx="50" cy="60" r="28" fill="url(#gradGarantia)"/>
+  
+  <!-- Círculo interior -->
+  <circle cx="50" cy="60" r="23" fill="white"/>
+  
+  <!-- Estrella interior -->
+  <path d="M50 45 L53 54 L62 54 L55 60 L58 69 L50 63 L42 69 L45 60 L38 54 L47 54 Z" 
+        fill="url(#gradGarantia)"/>
+  
+  <!-- Texto "100%" simulado -->
+  <circle cx="50" cy="60" r="8" fill="url(#gradGarantia)" opacity="0.2"/>
+</svg>

@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800">
+  <defs>
+    <linearGradient id="sky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#87CEEB;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E0F6FF;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="building" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#D5DBDB;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#AEB6BF;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Cielo -->
+  <rect width="1200" height="800" fill="url(#sky)"/>
+  
+  <!-- Sol -->
+  <circle cx="1000" cy="150" r="60" fill="#FFD700" opacity="0.8"/>
+  
+  <!-- Montañas de fondo -->
+  <polygon points="0,400 200,250 400,400" fill="#95A5A6" opacity="0.6"/>
+  <polygon points="300,400 550,200 800,400" fill="#7F8C8D" opacity="0.6"/>
+  
+  <!-- Suelo -->
+  <rect y="600" width="1200" height="200" fill="#D5D8DC"/>
+  
+  <!-- Construcción en progreso -->
+  <g transform="translate(300, 300)">
+    <!-- Pared de bloques -->
+    <rect x="0" y="200" width="600" height="300" fill="url(#building)" stroke="#7F8C8D" stroke-width="3"/>
+    
+    <!-- Filas de bloques -->
+    <line x1="0" y1="250" x2="600" y2="250" stroke="#5D6D7E" stroke-width="2"/>
+    <line x1="0" y1="300" x2="600" y2="300" stroke="#5D6D7E" stroke-width="2"/>
+    <line x1="0" y1="350" x2="600" y2="350" stroke="#5D6D7E" stroke-width="2"/>
+    <line x1="0" y1="400" x2="600" y2="400" stroke="#5D6D7E" stroke-width="2"/>
+    <line x1="0" y1="450" x2="600" y2="450" stroke="#5D6D7E" stroke-width="2"/>
+    
+    <!-- Columnas de bloques -->
+    <line x1="150" y1="200" x2="150" y2="500" stroke="#5D6D7E" stroke-width="2"/>
+    <line x1="300" y1="200" x2="300" y2="500" stroke="#5D6D7E" stroke-width="2"/>
+    <line x1="450" y1="200" x2="450" y2="500" stroke="#5D6D7E" stroke-width="2"/>
+    
+    <!-- Ventanas -->
+    <rect x="80" y="280" width="60" height="80" fill="#34495E" opacity="0.7"/>
+    <rect x="370" y="280" width="60" height="80" fill="#34495E" opacity="0.7"/>
+  </g>
+  
+  <!-- Pila de bloques en primer plano -->
+  <g transform="translate(100, 500)">
+    <rect x="0" y="50" width="100" height="60" fill="#95A5A6" stroke="#7F8C8D" stroke-width="2"/>
+    <rect x="0" y="0" width="100" height="50" fill="#AAB7B8" stroke="#7F8C8D" stroke-width="2"/>
+    <rect x="110" y="50" width="100" height="60" fill="#95A5A6" stroke="#7F8C8D" stroke-width="2"/>
+  </g>
+  
+  <!-- Badge de calidad -->
+  <g transform="translate(50, 50)">
+    <circle cx="80" cy="80" r="70" fill="#E67E22"/>
+    <circle cx="80" cy="80" r="55" fill="none" stroke="#FFFFFF" stroke-width="3"/>
+    <text x="80" y="75" font-family="Poppins, Arial, sans-serif" font-size="20" font-weight="bold" 
+          fill="#FFFFFF" text-anchor="middle">CALIDAD</text>
+    <text x="80" y="95" font-family="Poppins, Arial, sans-serif" font-size="18" font-weight="bold" 
+          fill="#FFFFFF" text-anchor="middle">GARANTIZADA</text>
+  </g>
+  
+  <!-- Texto -->
+  <text x="600" y="750" font-family="Poppins, Arial, sans-serif" font-size="28" font-weight="bold" 
+        fill="#2C3E50" text-anchor="middle">Bloques Motupe - En Construcción</text>
+  <text x="600" y="780" font-family="Poppins, Arial, sans-serif" font-size="18" 
+        fill="#7F8C8D" text-anchor="middle">Foto de referencia - Reemplazar con foto real</text>
+</svg>

@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#D5DBDB;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#AEB6BF;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Fondo -->
+  <rect width="800" height="600" fill="url(#bg2)"/>
+  
+  <!-- Bloque portante más robusto -->
+  <g transform="translate(230, 140)">
+    <!-- Cara frontal -->
+    <rect x="0" y="100" width="340" height="220" fill="#85929E" stroke="#5D6D7E" stroke-width="4"/>
+    
+    <!-- Cara superior (perspectiva) -->
+    <polygon points="0,100 60,65 400,65 340,100" fill="#AAB7B8" stroke="#5D6D7E" stroke-width="4"/>
+    
+    <!-- Cara lateral derecha (perspectiva) -->
+    <polygon points="340,100 400,65 400,285 340,320" fill="#717D7E" stroke="#5D6D7E" stroke-width="4"/>
+    
+    <!-- Huecos reforzados -->
+    <rect x="50" y="135" width="70" height="150" fill="#4D5656" opacity="0.8"/>
+    <rect x="135" y="135" width="70" height="150" fill="#4D5656" opacity="0.8"/>
+    <rect x="220" y="135" width="70" height="150" fill="#4D5656" opacity="0.8"/>
+    
+    <!-- Líneas de refuerzo -->
+    <line x1="0" y1="160" x2="340" y2="160" stroke="#5D6D7E" stroke-width="2" opacity="0.5"/>
+    <line x1="0" y1="260" x2="340" y2="260" stroke="#5D6D7E" stroke-width="2" opacity="0.5"/>
+    
+    <!-- Textura más gruesa -->
+    <circle cx="30" cy="170" r="2.5" fill="#5D6D7E" opacity="0.4"/>
+    <circle cx="310" cy="200" r="2.5" fill="#5D6D7E" opacity="0.4"/>
+    <circle cx="170" cy="250" r="2.5" fill="#5D6D7E" opacity="0.4"/>
+  </g>
+  
+  <!-- Texto -->
+  <text x="400" y="480" font-family="Poppins, Arial, sans-serif" font-size="32" font-weight="bold" 
+        fill="#2C3E50" text-anchor="middle">Bloque Portante</text>
+  <text x="400" y="520" font-family="Poppins, Arial, sans-serif" font-size="20" 
+        fill="#7F8C8D" text-anchor="middle">Foto de referencia - Reemplazar con foto real</text>
+</svg>
