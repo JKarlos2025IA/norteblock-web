@@ -115,6 +115,65 @@ document.querySelectorAll('.feature, .producto-card, .info-card').forEach(el => 
     observer.observe(el);
 });
 
+// ===== CARRUSEL DE OBRAS =====
+const track = document.querySelector('.carousel__track');
+const slides = Array.from(track?.children || []);
+const nextButton = document.querySelector('.carousel__btn--next');
+const prevButton = document.querySelector('.carousel__btn--prev');
+const indicators = document.querySelectorAll('.indicator');
+
+let currentSlide = 0;
+const slideWidth = slides[0]?.getBoundingClientRect().width || 0;
+
+// Posicionar slides
+slides.forEach((slide, index) => {
+    slide.style.left = slideWidth * index + 'px';
+});
+
+// Función para mover al slide
+const moveToSlide = (targetIndex) => {
+    if (!track) return;
+
+    track.style.transform = `translateX(-${slideWidth * targetIndex}px)`;
+    currentSlide = targetIndex;
+
+    // Actualizar indicadores
+    indicators.forEach((indicator, index) => {
+        if (index === targetIndex) {
+            indicator.classList.add('active');
+        } else {
+            indicator.classList.remove('active');
+        }
+    });
+};
+
+// Botón siguiente
+nextButton?.addEventListener('click', () => {
+    const nextSlide = currentSlide === slides.length - 1 ? 0 : currentSlide + 1;
+    moveToSlide(nextSlide);
+});
+
+// Botón anterior
+prevButton?.addEventListener('click', () => {
+    const prevSlide = currentSlide === 0 ? slides.length - 1 : currentSlide - 1;
+    moveToSlide(prevSlide);
+});
+
+// Click en indicadores
+indicators.forEach((indicator, index) => {
+    indicator.addEventListener('click', () => {
+        moveToSlide(index);
+    });
+});
+
+// Auto-play del carrusel (cada 4 segundos)
+setInterval(() => {
+    if (nextButton) {
+        const nextSlide = currentSlide === slides.length - 1 ? 0 : currentSlide + 1;
+        moveToSlide(nextSlide);
+    }
+}, 4000);
+
 // ===== CONSOLE INFO =====
 console.log('%c🏗️ Bloques Motupe', 'font-size: 24px; font-weight: bold; color: #E67E22;');
 console.log('%cSitio web desarrollado para el negocio familiar', 'font-size: 14px; color: #2C3E50;');
