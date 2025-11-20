@@ -175,6 +175,6 @@ setInterval(() => {
 }, 4000);
 
 // ===== CONSOLE INFO =====
-console.log('%c🏗️ Bloques Motupe', 'font-size: 24px; font-weight: bold; color: #E67E22;');
+console.log('%c🏗️ Bloques Monsefú', 'font-size: 24px; font-weight: bold; color: #E67E22;');
 console.log('%cSitio web desarrollado para el negocio familiar', 'font-size: 14px; color: #2C3E50;');
 console.log('%c💙 Hecho con amor', 'font-size: 12px; color: #7F8C8D;');
